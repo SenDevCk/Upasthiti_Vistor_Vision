@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="Upasthiti.vistor_vision.in.eAttndance">
+
+   <!-- <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <permission android:name="android.permission.READ_PHONE_STATE" />
+    <permission android:name="android.permission.READ_PROFILE" />
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.CAMERA" />-->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.SessionExpire"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Update_Lat_Long"></activity>
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Approve_Reject_Work" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Work_Details" />
+        <activity
+            android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.TimeSheet"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Approved_Leave_List" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.registeration" />
+        <activity
+            android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.LeaveApprove"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Emp_Profile" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.LeaveHistory" />
+        <activity
+            android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Update_Profile"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Employee_List" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Approve_Holi_Day" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Holidays" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Monthly_Report" />
+        <activity
+            android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Apply_Leave"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.DailyReportList" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Upload_Profile_Photo" />
+        <activity
+            android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.LoginActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.ChangePasswordActivity" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.CameraActivity" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Report_Attendance_Summary" />
+        <activity android:name="Upasthiti.vistor_vision.in.eAttendance.Activity.Touch_View_Image" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

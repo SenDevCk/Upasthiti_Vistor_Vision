@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_gd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_wrklst"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar_gd"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/ll_dist"
+            android:layout_marginBottom="5dp"
+            android:padding="8dp"
+            android:background="@drawable/rectdropdwon">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:id="@+id/lft_arrow"
+                android:src="@drawable/left_arrow"
+                android:layout_height="match_parent"></ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:text="Month"
+                android:id="@+id/tv_mnth"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"></TextView>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:id="@+id/right_arrow"
+                android:src="@drawable/arrow"
+                android:layout_height="match_parent"></ImageView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_month"
+        android:layout_above="@+id/footer"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/list_wrk_Itm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#ccc"
+                android:dividerHeight="1dp">
+
+            </ListView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

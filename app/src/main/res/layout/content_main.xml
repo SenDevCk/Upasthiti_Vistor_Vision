@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="Upasthiti.vistor_vision.in.eAttendance.Activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11:39"
+            android:textAlignment="center"
+            android:textColor="#45608d"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aug 19, 2020"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:id="@+id/tv_emp_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="000000000045"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textColor="#999"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/tv_name_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bunty Singh ( Mis Manager )"
+            android:textAlignment="center"
+            android:textColor="#999"
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/parent_scroll_Main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_time"
+        android:layout_above="@+id/footer"
+        android:visibility="visible"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/home_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/time">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bghome" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_bg"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txt_Buniyad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Optimize IT Systems"
+                    android:textAlignment="center"
+                    android:textColor="#45608d"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_time_sheet"
+            android:visibility="gone"
+           android:layout_margin="40dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_time_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardview_app_loan"
+                android:drawableStart="@drawable/checj_in"
+                android:padding="15dp"
+                android:text=" Fill Time Sheet"
+                android:textAlignment="textStart"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_att_mrk"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn_chkIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cardview_app_loan"
+                        android:drawableStart="@drawable/checj_in"
+                        android:padding="5dp"
+                        android:text=" Check IN"
+                        android:textAlignment="textStart"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btn_chkout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cardview_app_loan"
+                        android:drawableStart="@drawable/check_out"
+                        android:padding="5dp"
+                        android:text=" Check Out"
+                        android:textAlignment="textStart"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_chkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_btns"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/cardview"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chk_inoffice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Assure that i am in office. Thank You!"></CheckBox>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ly_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="@string/loanamt"
+                        android:maxLines="6"
+                        android:minLines="3" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_chkbox"
+                android:layout_margin="8dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_tk_camera"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/cardview">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/imgview"
+                        android:src="@drawable/ic_menu_camera"></ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_mark_att"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="@string/mark"
+                            android:textColor="#FF5722"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Check In Time : "></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_In_Time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pending Checked In"
+                            android:textSize="14sp"
+                            android:textColor="#FF5722"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Check Out : "></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_out_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Pending Checked Out"
+                            android:textColor="#FF5722"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:background="@drawable/cardview">
+
+                <TextView
+                    android:id="@+id/tv_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"></TextView>
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_leave_sts"
+        android:layout_below="@+id/ll_time"
+        android:layout_above="@+id/footer"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applyed_leave"
+            android:padding="5dp"
+            android:fontFamily="@font/amitabold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#010080">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight=".2"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="Name"
+                android:padding="3dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight=".2"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Buniyad Center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight=".2"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="Remarks"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight=".2"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Leave Type"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0.5dp"
+                android:layout_weight=".2"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="More Info."
+                android:padding="3dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/pullToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/list_leav_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_tag"
+                    android:layout_marginTop="0dp"
+                    android:scrollbars=""
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/text_report_not_found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="Report Not Found !"
+                    android:visibility="gone" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_pending_leave_sts"
+        android:layout_below="@+id/ll_time"
+        android:layout_above="@+id/footer"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/applyed_leave"
+            android:padding="5dp"
+            android:fontFamily="@font/amitabold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/red">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/re_filter"
+            android:layout_above="@+id/footer"
+            android:orientation="vertical">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/pullToRefresh_pending_leave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/list_pendingleave_Itm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#ccc"
+                    android:dividerHeight="1dp">
+
+                </ListView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

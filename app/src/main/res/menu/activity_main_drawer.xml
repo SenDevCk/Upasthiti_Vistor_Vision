@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/m1"
+        android:title="Menu">
+        <menu>
+    <group android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/nav_tdy_rpt"
+            android:icon="@drawable/ic_view_loan_daetails"
+            android:title="View Today Report" />
+        <item
+            android:id="@+id/nav_mnth_rpt"
+            android:icon="@drawable/ic_view_loan_daetails"
+            android:title="View Monthly Report" />
+
+        <item
+            android:id="@+id/nav_aply_leave"
+            android:icon="@drawable/ic_keyboard_24px"
+            android:title="Apply Leave" />
+
+        <item
+            android:id="@+id/nav_time_sheet"
+            android:icon="@drawable/ic_reg"
+            android:title="@string/fill_assignment" />
+
+    </group>
+        </menu>
+    </item>
+
+    <item
+    android:id="@+id/m2"
+    android:title="Menu">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_reg"
+                android:icon="@drawable/ic_reg"
+                android:visible="false"
+                android:title="Registeration" />
+            <item
+                android:id="@+id/nav_tdy_att"
+                android:icon="@drawable/ic_view_loan_daetails"
+                android:title="View Today Report" />
+            <item
+                android:id="@+id/nav_emply_list"
+                android:icon="@drawable/ic_loan_emi"
+                android:title="View Employee List" />
+            <item
+                android:id="@+id/nav_update_lat_long"
+                android:icon="@drawable/ic_loan_emi"
+                android:title="Update Lat Long" />
+        </group>
+    </menu>
+</item>
+
+   <item
+    android:id="@+id/m3"
+    android:title="Menu">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:icon="@drawable/ic_reg"
+                android:title="Registeration" />
+            <item
+                android:icon="@drawable/ic_view_loan_daetails"
+                android:title="View Today Report" />
+            <item
+                android:icon="@drawable/ic_loan_emi"
+                android:title="View Employee List" />
+
+        </group>
+    </menu>
+</item>
+
+    <item
+        android:id="@+id/m4"
+        android:title="Menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_reg_adm"
+                    android:icon="@drawable/ic_reg"
+                    android:title="Registeration" />
+                <item
+                    android:id="@+id/nav_tdy_att_adm"
+                    android:icon="@drawable/ic_view_loan_daetails"
+                    android:title="View Today Report" />
+                <item
+                    android:id="@+id/nav_emp_list"
+                    android:icon="@drawable/ic_loan_emi"
+                    android:title="View Employee List" />
+
+                <item
+                    android:id="@+id/nav_getleave_pm_spm"
+                    android:icon="@drawable/ic_view_loan_daetails"
+                    android:visible="false"
+                    android:title="Pending leave" />
+                <item
+                    android:id="@+id/nav_aprvedleave_pm_spm"
+                    android:icon="@drawable/ic_loan_emi"
+                    android:title="Approved/Rejected list" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/m5"
+        android:title="Menu">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/ic_view_loan_daetails"
+                    android:title="Pending leave" />
+                <item
+                    android:icon="@drawable/ic_loan_emi"
+                    android:title="Approved leave" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/m6"
+        android:title="Menu">
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/nav_time_sheet_hq"
+                    android:icon="@drawable/ic_reg"
+                    android:title="Fill Time Sheet" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_holiday"
+                android:icon="@drawable/ic_date_range"
+                android:title="HoliDays" />
+            <item
+                android:id="@+id/nav_pass_change"
+                android:icon="@drawable/ic_vpn_key_black_18dp"
+                android:title="Change Password" />
+        </menu>
+
+    </item>
+
+</menu>

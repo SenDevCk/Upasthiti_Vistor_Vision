@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="Upasthiti.vistor_vision.in.eAttendance.Activity.Apply_Leave">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_rej_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_rej_approv"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <!-- <include layout="@layout/header" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:layout_below="@+id/app_bar_rej_app"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:id="@+id/parent_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Employee No " />
+
+                    <TextView
+                        android:id="@+id/text_EmpNo"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Project Name " />
+
+                    <TextView
+                        android:id="@+id/text_proj_typ"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Work Id " />
+
+                    <TextView
+                        android:id="@+id/text_wrk_id"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Work Type " />
+
+                    <TextView
+                        android:id="@+id/text_wrk_typ"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Log Date" />
+
+                    <TextView
+                        android:id="@+id/text_log_date"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Log Type" />
+
+                    <TextView
+                        android:id="@+id/text_log_typ"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:id="@+id/ll_wtime"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Work Time" />
+
+                    <TextView
+                        android:id="@+id/text_w_time"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:id="@+id/ll_log_des"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Log Description" />
+
+                    <TextView
+                        android:id="@+id/text_log_des"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Remarks" />
+
+                    <TextView
+                        android:id="@+id/text_remark"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".35"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Status" />
+
+                    <TextView
+                        android:id="@+id/text_sts"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".65"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+                <View style="@style/proifleDetailsView" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_layout_leave"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_rej_reason"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minLines="3"
+                        android:maxLines="6"
+                        android:gravity="left"
+                        android:imeOptions="actionNext"
+                        android:hint="Enter Reasons To Reject" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn_rej"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/redgradientbuttonshape"
+                        android:text="Reject"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/btn_approve"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bluegradientbuttonshape"
+                        android:text="Approve"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
+                        tools:ignore="ButtonStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="Upasthiti.vistor_vision.in.eAttendance.Activity.Apply_Leave">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_gd"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+
+            <!-- <include layout="@layout/header" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:layout_below="@+id/app_bar_report"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentStart="true">
+
+    <ScrollView
+        android:id="@+id/parent_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Employee No " />
+
+            <TextView
+                android:id="@+id/text_EmpNo"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/text_EmpName"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Post Name" />
+
+            <TextView
+                android:id="@+id/text_post_name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Leave Type " />
+
+            <TextView
+                android:id="@+id/text_leav_typ"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Leave Id " />
+
+            <TextView
+                android:id="@+id/text_leav_id"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/ll_sts"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Leave Status" />
+
+            <TextView
+                android:id="@+id/text_l_sts"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Remarks" />
+
+            <TextView
+                android:id="@+id/text_remark"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/ll_app_rmk"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Approved Remarks" />
+
+            <TextView
+                android:id="@+id/text_app_remark"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="No of Day" />
+
+            <TextView
+                android:id="@+id/text_no_day"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="From Date" />
+
+            <TextView
+                android:id="@+id/text_frm_date"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="To Date" />
+
+            <TextView
+                android:id="@+id/text_to_date"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Apply Date" />
+
+            <TextView
+                android:id="@+id/text_aply_date"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/ll_ap_date"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="Approved Date" />
+
+            <TextView
+                android:id="@+id/text_app_date"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".35"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="District" />
+
+            <TextView
+                android:id="@+id/text_buniyad"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".65"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        <View style="@style/proifleDetailsView" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/leave_doc"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:id="@+id/ll_tk_camera"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview">
+
+                <ImageView
+                    android:id="@+id/imgview_leave"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/ic_attach_file_24px"></ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_aat_doc"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="please find the attachment ! ">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:id="@+id/txt_layout_leave"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_leave_rej_reason"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minLines="3"
+                    android:maxLines="6"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:hint="Enter Reasons To Reject"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_rej"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/redgradientbuttonshape"
+                android:text="Reject"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_approve"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bluegradientbuttonshape"
+                android:text="Approve"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

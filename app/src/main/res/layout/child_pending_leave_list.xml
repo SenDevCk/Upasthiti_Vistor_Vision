@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+  <TextView
+        android:id="@+id/tv_lapply_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="date"
+        android:textColor="#282724"
+        android:textSize="9dip"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="-7dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".50"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_ename"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/employe_name"
+                android:textColor="#282724"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tv_dist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Check In Time"
+                android:textColor="#5C5959"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+            android:id="@+id/tv_buniyad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Out time"
+            android:textColor="#5C5959"
+            android:textSize="12dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tv_leave_typ"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Out time"
+                android:textColor="#D10505"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_double_arrow" />
+
+        </RelativeLayout>
+
+     </LinearLayout>
+</LinearLayout>

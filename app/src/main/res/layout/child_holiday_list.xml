@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp">
+        <TextView
+            android:layout_width="5dp"
+            android:text=""
+            android:id="@+id/txt_bg"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="match_parent"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:padding="10dp"
+        android:background="@drawable/cardview_list"
+        android:paddingTop="2dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".50"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_Day"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:textColor="#282724"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#5C5959"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/tv_rmrk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+                android:textColor="#5C5959"
+                android:textSize="16dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
